@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// THIS METHOD FOR FINDING PRIMES IS TOO INEFFICIENT 
 bool isPrime(int n){
     // Check from 2 to n-1
     for (int i = 2; i < n; i++){
@@ -14,11 +15,13 @@ int main(){
     int a, b;
     scanf("%d",&testCases);
     for (int i = 0; i < testCases; i++){
-        scanf("%d %d\n", &a, &b);
+        
+        scanf("%d %d", &a, &b);
 
         //loop to print out all prime numbers
-        for(int j = a; j <= b; a++){
-            if (isPrime(a)) printf("%d\n", a);
+        for(int j = a; j <= b; j++){
+            if (isPrime(j)) printf("%d\n", j);
         }
+
     }
 }
